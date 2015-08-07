@@ -49,6 +49,11 @@
 				{{#if build.userId}}
 					<div class="overflow-hidden build-user" title="{{build.userId}}">{{build.userId}}</div>
 				{{/if}}
+				{{#if build.isComplete}}
+				    {{#if build.buildLabel}}
+				        {{build.buildLabel}}
+				    {{/if}}
+				{{/if}}
 			</td>
 		</tr>
 		<tr class="build-actions">
